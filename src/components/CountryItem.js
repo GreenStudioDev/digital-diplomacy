@@ -18,9 +18,9 @@ const columns = [
     maxWidth: '130px'
   },
   {
-    name: 'Cuenta',
+    name: 'Account',
     selector: (row) => (
-      <Link to={`/diplomacia-digital/${row.official_account}`}>
+      <Link to={`/digital-diplomacy/${row.official_account}`}>
         {' '}
         {row.official_account}{' '}
       </Link>

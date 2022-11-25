@@ -35,7 +35,7 @@ function MostMentionedPie ({ newData, title, usuario }) {
     options: {
       title: {
         display: true,
-        text: 'Mentions por hashtags'
+        text: 'Mentions by Hashtags'
       },
       legend: {
         display: true,
@@ -48,7 +48,7 @@ function MostMentionedPie ({ newData, title, usuario }) {
       {data.length > 0 && (
         <PieChartContainer usuario={usuario}>
           <h4>
-            Categorias de los más mencionados de: <br />
+          Most mentioned categories of: <br />
             {title}
           </h4>
           <Doughnut data={dataChart} options={optionsPie} />

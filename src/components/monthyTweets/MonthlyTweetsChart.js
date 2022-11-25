@@ -102,7 +102,7 @@ export function MonthlyTweetsChart ({ newData, context }) {
 
       title: {
         display: true,
-        text: 'Número de Tweets mensuales',
+        text: 'Number of tweets per month',
         position: 'top',
         fullSize: true,
         color: theme.text,

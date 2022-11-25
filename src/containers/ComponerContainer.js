@@ -42,8 +42,8 @@ export default function ComponentContainer ({ usuario, open }) {
         <CollapsableTableStyled>
           <ButtonToogle name="monthy-tweets" open={open}>
             {isPeriodComparisonActive
-              ? ` Número de tweets por mes  del periodo ${periodA.name} al ${periodB.name}`
-              : ` Número de tweets por mes de las cuentas ${accountIdA.name} y ${accountIdB.name}`}
+              ? ` Number of tweets per month from ${periodA.name} to ${periodB.name} periods`
+              : ` Number of tweets per month of the ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
           <MonthlyTweetsItems context={dataComparing} />
@@ -55,7 +55,7 @@ export default function ComponentContainer ({ usuario, open }) {
           <ButtonToogle name="most-retweet" open={open}>
             {isPeriodComparisonActive
               ? `Usuarios más retuiteados del periodo ${periodA.name} al ${periodB.name}`
-              : `Usuarios más retuiteados de las cuentas ${accountIdA.name} y ${accountIdB.name}`}
+              : `Most retweeted users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
           <MostRetweetedItems context={dataComparing} usuario={usuario} />
@@ -67,7 +67,7 @@ export default function ComponentContainer ({ usuario, open }) {
           <ButtonToogle name="most-replied" open={open}>
             {isPeriodComparisonActive
               ? `Usuarios que más han recibido respuesta del periodo ${periodA.name} al ${periodB.name}`
-              : `Usuarios que más han recibido respuesta de las cuentas ${accountIdA.name} y ${accountIdB.name}`}
+              : `Most replied users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
           <MostRepliedItems usuario={usuario} context={dataComparing} />
@@ -79,7 +79,7 @@ export default function ComponentContainer ({ usuario, open }) {
           <ButtonToogle name="most-ht" open={open}>
             {isPeriodComparisonActive
               ? `Hashtags más usados del periodo ${periodA.name} al ${periodB.name}`
-              : `Hashtags más usados de las cuentas ${accountIdA.name} y ${accountIdB.name}`}
+              : `Most used Hashtags from ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
           <HtMostUsedItems
@@ -95,7 +95,7 @@ export default function ComponentContainer ({ usuario, open }) {
           <ButtonToogle name="most-mentioned" open={open}>
             {isPeriodComparisonActive
               ? `Usuarios más mencionados del periodo ${periodA.name} al ${periodB.name}`
-              : `Usuarios más mencionados de las cuentas ${accountIdA.name} y ${accountIdB.name}`}
+              : `Most mentioned users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
           <MostMentionedItems usuario={usuario} context={dataComparing} />

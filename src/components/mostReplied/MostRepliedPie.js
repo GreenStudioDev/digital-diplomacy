@@ -41,7 +41,7 @@ function MostRepliedPie ({ newData, title, usuario }) {
   return (
     <>
     {data.length > 0 && <PieChartContainer usuario={usuario}>
-      <h4>Categorias de más respuesta de: <br/> {title}</h4>
+      <h4>Most replied to categories of: <br/> {title}</h4>
       <Doughnut
         data={dataChart}
         options={optionsPie}

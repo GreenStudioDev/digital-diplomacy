@@ -22,7 +22,7 @@ const FloatingText = memo(function memoFloatingText ({ setCurrentMap, islands, z
           </p>
         )}
         <ButtonFloatingStyled onClick={handleMap} type="button">
-          <p tabIndex={0}>Ver mapa continente</p>
+          <p tabIndex={0}>Map of the continent</p>
         </ButtonFloatingStyled>
       </FloatingTextIslandsStyled>
     )
@@ -37,7 +37,7 @@ const FloatingText = memo(function memoFloatingText ({ setCurrentMap, islands, z
         </p>
       )}
       <ButtonFloatingStyled onClick={handleMap}>
-        <p>Ver mapa del Caribe</p>
+        <p>Map of the Caribbean</p>
       </ButtonFloatingStyled>
     </FloatingTextStyled>
   )

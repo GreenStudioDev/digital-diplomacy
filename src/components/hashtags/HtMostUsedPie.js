@@ -33,7 +33,7 @@ function HtMostUsedPie ({ newData, title, usuario }) {
     options: {
       title: {
         display: true,
-        text: 'Mentions por hashtags'
+        text: 'Mentions by Hashtags'
       },
       legend: {
         display: true,
@@ -44,7 +44,7 @@ function HtMostUsedPie ({ newData, title, usuario }) {
   return (
     <PieChartContainer usuario={usuario}>
       <h4>
-        Categorias más usadas de: <br /> {title}
+      Most used categories of: <br /> {title}
       </h4>
       {data.length > 0
         ? (

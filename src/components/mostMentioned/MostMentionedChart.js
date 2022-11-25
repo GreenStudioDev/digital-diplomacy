@@ -54,7 +54,7 @@ export function MostMentionedChart ({ newData }) {
   const data = {
     datasets: [
       {
-        label: 'Cuenta Oficial ' + newData[0].official_account,
+        label: 'Official Account' + newData[0].official_account,
         data: dataSet,
         tension: 0.3,
         borderColor: 'rgb(75, 192, 192)',

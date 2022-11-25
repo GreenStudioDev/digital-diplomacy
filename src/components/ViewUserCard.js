@@ -50,18 +50,18 @@ function ViewUserCard ({ data, period }) {
         <UserAccountCard user={data[0].official_account} />
         <hr />
         <UserCard
-          name={'Institución / Nombre'}
+          name={'Institution / Name'}
           data={data[0].official_account_name_spa}
         />
         <hr />
         <UserCard
-          name={'Fecha de creación de la cuenta'}
+          name={'Account creation date'}
           data={data[0]['official_account creation_date']}
         />
       </div>
       <div className="innerRight">
         <UserCard
-          name={'Nº Seguidores'}
+          name={'Followers Nº'}
           data={
             data[period.endDate - 1]?.followers_number === '0'
               ? data[period.endDate - 2]?.followers_number
@@ -71,7 +71,7 @@ function ViewUserCard ({ data, period }) {
         />
         <hr />
         <UserCard
-          name={'Nº cuentas seguidas'}
+          name={'Followiing accounts Nº'}
           data={
             data[period.endDate - 1]?.following_number === '0'
               ? data[period.endDate - 2]?.following_number

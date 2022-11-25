@@ -55,7 +55,7 @@ export function MostRetweetedChart ({ newData }) {
   const data = {
     datasets: [
       {
-        label: 'Cuenta Oficial ' + '',
+        label: 'Official account ' + '',
         data: dataSet,
         tension: 0.3,
         borderColor: 'rgb(75, 192, 192)',

@@ -17,7 +17,7 @@ const VerifiedPie = () => {
   }
 
   const dataChart = {
-    labels: ['Verificados', 'No verificados'],
+    labels: ['Verified', 'Not verified'],
     datasets: [
       {
         data,

@@ -6,9 +6,9 @@ export const columns = [
     name: <p
       style={{
         fontSize: '0.8rem',
-        title: 'Usuario/ Nombre cuenta'
+        title: 'User/Account name'
       }}
-    >Usuario/ Nombre cuenta</p>,
+    >User/Account name</p>,
     selector: (row) => (
       <UserAccount
         userAccount={row.userAccount}
@@ -35,7 +35,7 @@ export const columns = [
     style={{
       fontSize: '0.8rem'
     }}
-    >Categoría</p>,
+    >Category</p>,
     selector: (row) => <b>{row.categoría}</b>,
     sortable: true,
     sortFunction: (a, b) => {
@@ -48,7 +48,7 @@ export const columns = [
       return 0
     },
     compact: true,
-    id: 'categoria',
+    id: 'category',
     wrap: true,
     maxWidth: '250px',
     minWidth: '100px',
@@ -59,7 +59,7 @@ export const columns = [
     style={{
       fontSize: '0.8rem'
     }}
-    >Verificado</p>,
+    >Verified</p>,
     selector: (row) => <IsVerified isVerified={row.isVerified} />,
     compact: true,
     id: 'isVerified',
@@ -73,7 +73,7 @@ export const columns = [
     style={{
       fontSize: '0.8rem'
     }}
-    >Número de Tweets</p>,
+    >Tweets number</p>,
     selector: (row) => <BarContainer dataBar={row.tweets_number} />,
     id: 'tweetsNumber',
     maxWidth: '450px',

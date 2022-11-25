@@ -48,12 +48,12 @@ function UsePeriodErrors ({ periodComparison, errors, setErrors }) {
     <ErrorContainer>
       {errors.samePeriods === true && (
         <ErrorTable>
-          <p>Las fechas no pueden ser iguales</p>
+          <p>Dates may not be the same</p>
         </ErrorTable>
       )}
       {errors.emptyPeriods === true && (
         <ErrorTable>
-          <p>Las fechas no pueden estar vacias</p>
+          <p>Dates may not be the empty</p>
         </ErrorTable>
       )}
       {errors.nonAscendingPeriods === true && (

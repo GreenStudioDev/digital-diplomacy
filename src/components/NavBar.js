@@ -17,7 +17,7 @@ function NavBar ({ themeToggler }) {
     <NavBarStyled>
       <div className="navbar-header">
         <i className='backArrow'>
-          <Link to={'/diplomacia-digital'} tabIndex={0}>
+          <Link to={'/digital-diplomacy'} tabIndex={0}>
             <ArrowBackIcon
               sx={{
                 fontSize: 40,
@@ -31,7 +31,7 @@ function NavBar ({ themeToggler }) {
         <MenuButtonStyled className="menu-item"type='button'
           onClick={changeTheme}
         >
-          <p tabIndex={0}>CAMBIAR TEMA</p>
+          <p tabIndex={0}>CHANGE THEME</p>
         </MenuButtonStyled>
       </div>
     </NavBarStyled>

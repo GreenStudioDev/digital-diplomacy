@@ -7,19 +7,19 @@ import PropTypes from 'prop-types'
 const marks = [
   {
     value: 1,
-    label: '2020 semestre I'
+    label: '2020 semester I'
   },
   {
     value: 2,
-    label: '2020 semestre II'
+    label: '2020 semester II'
   },
   {
     value: 3,
-    label: '2021 semestre I'
+    label: '2021 semester I'
   },
   {
     value: 4,
-    label: '2021 semestre II'
+    label: '2021 semester II'
   }
 ]
 
@@ -77,8 +77,8 @@ export function CompPeriodSlider ({ setPeriod, data }) {
         padding: '10px'
       }}
     >
-      <h4>Periodo de búsqueda</h4>
-      <small>Acorde a la data disponible de la cuenta</small>
+      <h4>Search period</h4>
+      <small>According to available account data</small>
       <Box>
         <Slider
           getAriaLabel={() => 'Period range'}

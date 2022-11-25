@@ -20,18 +20,18 @@ export function CompCategoryCb ({ setCategories }) {
   return (
     <>
     <div className='btnGroup'>
-      <h5>Criterios:</h5>
+      <h5>Criteria:</h5>
       <FormGroup className="row">
         <div className="col-6">
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Usuarios más retuiteados"
+            label="Most retweeted users"
             name="mostRetweeted"
             onChange={handleSelect}
           />
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Usuarios con más respuestas"
+            label="Users with more responses"
             name="mostReplied"
             onChange={handleSelect}
           />
@@ -39,19 +39,19 @@ export function CompCategoryCb ({ setCategories }) {
         <div className="col-6">
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Usuarios más mencionados"
+            label="Most mentioned users"
             name="mostMentioned"
             onChange={handleSelect}
           />
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Hashtags más usados"
+            label="Most used hashtags"
             name="mostHashtags"
             onChange={handleSelect}
           />
        <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Número de Tweets mensuales"
+            label="Number of monthly Tweets"
             name="monthlyTweets"
             onChange={handleSelect}
           />

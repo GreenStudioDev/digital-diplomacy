@@ -24,11 +24,11 @@ export function MonthlyTweetsItem ({ newData }) {
 
   const columns = [
     {
-      name: 'Mes',
+      name: 'Month',
       selector: (row) => row.stringMonth
     },
     {
-      name: 'Numero de tweets',
+      name: 'Number of tweets',
       selector: (row) => row.tweets_number
     }
   ]
@@ -56,7 +56,7 @@ export function MonthlyTweetsItem ({ newData }) {
         <h3> {accountInfo[2]} </h3>
         <h3>
           {' '}
-          <Link to={`/diplomacia-digital/${accountInfo[0]}`}>
+          <Link to={`/digital-diplomacy/${accountInfo[0]}`}>
             {accountInfo[0]}
           </Link>{' '}
         </h3>
@@ -67,7 +67,7 @@ export function MonthlyTweetsItem ({ newData }) {
         <DataTable
           columns={columns}
           data={rows}
-          title="Tweets por mes"
+          title="Tweets per month"
           subHeader
           subHeaderAlign="left"
           highlightOnHover
