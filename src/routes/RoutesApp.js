@@ -8,11 +8,11 @@ function RoutesApp () {
     <BrowserRouter>
     <Routes>
       <Route
-        path="/digital-diplomacy"
+        path="/en/digital-diplomacy"
         element={<Home />}
       />
       <Route
-        path={'/digital-diplomacy/:account'}
+        path={'/en/digital-diplomacy/:account'}
         element={<AccountDetails />}
       />
     </Routes>

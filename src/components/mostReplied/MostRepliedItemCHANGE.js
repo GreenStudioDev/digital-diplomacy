@@ -58,7 +58,7 @@ export function MostRepliedItemCHANGE ({ newData, title, arrayBar }) {
 /*
  return (
     <div>
-      <h1>cuenta oficial:<Link to={`/digital-diplomacy/${newData[0].official_account}`}>{newData[0].official_account}</Link> </h1>
+      <h1>cuenta oficial:<Link to={`/en/digital-diplomacy/${newData[0].official_account}`}>{newData[0].official_account}</Link> </h1>
       <h1>Periodo de {periodId.startDate.toString()} a {periodId.endDate.toString()}</h1>
       <h1>menciones totales del periodo: {totaltweets}</h1>
       {newData.map((data) => (

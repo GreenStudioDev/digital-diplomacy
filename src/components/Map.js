@@ -105,6 +105,15 @@ const Map = memo(
         return 420
       }
     }
+    const mapRotate = () => {
+      if (window.innerWidth <= 480) {
+        return [74, 13, 0]
+      } else if (window.innerWidth <= 768) {
+        return [74, 10, 0]
+      } else if (window.innerWidth > 768) {
+        return [74, 11, 0]
+      }
+    }
 
     return (
       <div className="map">
@@ -113,7 +122,7 @@ const Map = memo(
           width={windowSize.width ? windowSize.width * 0.98 : 500}
           projection="geoAzimuthalEqualArea"
           projectionConfig={{
-            rotate: [74, 8, 0],
+            rotate: mapRotate(),
             scale: mapZoom()
           }}
           onClick={handleOnClick}

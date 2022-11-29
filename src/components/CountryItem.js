@@ -20,7 +20,7 @@ const columns = [
   {
     name: 'Account',
     selector: (row) => (
-      <Link to={`/digital-diplomacy/${row.official_account}`}>
+      <Link to={`/en/digital-diplomacy/${row.official_account}`}>
         {' '}
         {row.official_account}{' '}
       </Link>

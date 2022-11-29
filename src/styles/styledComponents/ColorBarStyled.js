@@ -47,7 +47,7 @@ export const ColorBarContainer = styled.article`
   }
   @media (max-width: 480px) {
     width: 100px;
-    inset: 269px 100px auto auto;
+    inset: 269px 80px auto auto;
     scale: 0.6;
   }
 `

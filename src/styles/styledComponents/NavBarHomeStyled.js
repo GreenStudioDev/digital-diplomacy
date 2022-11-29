@@ -69,7 +69,7 @@ export const NavBarHomeStyled = styled.nav`
     }
     .opened {
       position: absolute;
-      top: 119px;
+      top: 154px;
       left: 0;
       width: 100%;
       height: 90%;
@@ -98,6 +98,9 @@ export const NavBarHomeStyled = styled.nav`
           margin-bottom: 0;
           font-weight: 500;
         }
+      }
+      @media (max-width: 480px) {
+        top: 120px;
       }
     }
 

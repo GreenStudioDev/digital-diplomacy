@@ -144,7 +144,7 @@ export function HtMostUsedItem ({ newData, periodId }) {
         <h3> {accountInfo[2]} </h3>
         <h3>
           {' '}
-          <Link to={`/digital-diplomacy/${accountInfo[0]}`}>
+          <Link to={`/en/digital-diplomacy/${accountInfo[0]}`}>
             {accountInfo[0]}
           </Link>{' '}
         </h3>
@@ -177,7 +177,7 @@ export function HtMostUsedItem ({ newData, periodId }) {
 
 /*
  <div>
-      <h1>cuenta oficial:</h1> <Link to={`/digital-diplomacy/${newData[0].official_account}`}>{newData[0].official_account}</Link>
+      <h1>cuenta oficial:</h1> <Link to={`/en/digital-diplomacy/${newData[0].official_account}`}>{newData[0].official_account}</Link>
       <h1>
         Periodo de {periodId.startDate.toString()} a{' '}
         {periodId.endDate.toString()}

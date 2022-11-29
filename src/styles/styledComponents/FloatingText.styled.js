@@ -181,7 +181,7 @@ export const ButtonFloatingStyled = styled.button`
     top: 19px;
     width: 100%;
     height: 40px;
-    left: -12px;
+    left: -35px;
     bottom: auto;
   }
 `
@@ -227,7 +227,7 @@ export const ButtonFloatingIslandStyled = styled.button`
     position: absolute;
     width: 70%;
     left: -25px;
-    bottom: 40px;
+    bottom: 12px;
     height: 40px;
   }
 `

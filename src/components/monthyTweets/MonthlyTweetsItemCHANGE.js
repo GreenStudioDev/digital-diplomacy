@@ -56,7 +56,7 @@ export function MonthlyTweetsItem ({ newData }) {
         <h3> {accountInfo[2]} </h3>
         <h3>
           {' '}
-          <Link to={`/digital-diplomacy/${accountInfo[0]}`}>
+          <Link to={`/en/digital-diplomacy/${accountInfo[0]}`}>
             {accountInfo[0]}
           </Link>{' '}
         </h3>
