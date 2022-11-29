@@ -36,7 +36,7 @@ export default function MostRepliedItems ({ usuario, context }) {
   </Spinner>
   }
   if (data.length === 0) {
-    return <EmptyDataStyled>No hay data correspondiente al periodo seleccionado</EmptyDataStyled>
+    return <EmptyDataStyled>No data for the selected period</EmptyDataStyled>
   }
 
   return (
@@ -64,7 +64,7 @@ export default function MostRepliedItems ({ usuario, context }) {
      Object.values(innerData).length === 1 && (
       <StyledDataTable className="dataTable">
         <div className="column">
-          <h1>No hay datos para mostrar</h1>
+          <h1>No data</h1>
         </div>
       </StyledDataTable>
       )}

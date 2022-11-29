@@ -37,11 +37,11 @@ export default function AccountDetails () {
     setDataSearch({
       country: userId[0].country_id,
       dataUser: userId,
-      userOfficialName: userId[0].official_account_name_spa,
+      userOfficialName: userId[0].official_account_name_eng,
       accounts: {
         accountIdA: {
           id: userId[0].official_account_id,
-          name: userId[0].official_account_name_spa
+          name: userId[0].official_account_name_eng
         }
       },
       period
@@ -49,7 +49,7 @@ export default function AccountDetails () {
   }, [fol, account, period])
 
   if (fol.length === 0) {
-    return <div>Error no hay data en ese Usuario</div>
+    return <div>Error - no data for this user</div>
   }
 
   return (

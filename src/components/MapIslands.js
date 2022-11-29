@@ -96,6 +96,14 @@ export default function MapIslands ({
     .domain([0, 11161])
     .range(['#edf7ff', '#1d9bf0'])
 
+  const mapZoom = () => {
+    if (window.innerWidth < 480) {
+      return 970
+    } else {
+      return 1700
+    }
+  }
+
   return (
     <div className="map">
       <ComposableMap
@@ -103,8 +111,8 @@ export default function MapIslands ({
         width={windowSize.width ? windowSize.width : 1000}
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          rotate: [72, -17, 0],
-          scale: 1700
+          rotate: [72, -19, 0],
+          scale: mapZoom()
         }}
         onClick={handleOnClick}
       >

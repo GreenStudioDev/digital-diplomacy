@@ -14,7 +14,7 @@ const periods = [
   },
   {
     id: 3,
-    name: '2020-Consolidado'
+    name: '2020-Consolidated'
   },
   {
     id: 4,
@@ -26,7 +26,7 @@ const periods = [
   },
   {
     id: 6,
-    name: '2021-Consolidado'
+    name: '2021-Consolidated'
   }
 ]
 

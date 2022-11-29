@@ -84,9 +84,9 @@ export const CompAccountSelector = memo(function accountSelectorMemo ({ setAccou
                 style={{ borderBottom: '1px dotted black' }}
               >
                 <div >
-                  <span><b>{item.country_name_spa}</b></span>
+                  <span><b>{item.country_name_eng}</b></span>
                   <h6>{item.official_account}</h6>
-                  <span>{item.official_account_name_spa}</span>
+                  <span>{item.official_account_name_eng}</span>
                 </div>
               </MenuItem>
             ))}
@@ -119,9 +119,9 @@ export const CompAccountSelector = memo(function accountSelectorMemo ({ setAccou
 
               >
                 <div>
-                  <span><b>{item.country_name_spa}</b></span>
+                  <span><b>{item.country_name_eng}</b></span>
                   <h6>{item.official_account}</h6>
-                  <span>{item.official_account_name_spa}</span>
+                  <span>{item.official_account_name_eng}</span>
                 </div>
               </MenuItem>
             ))}

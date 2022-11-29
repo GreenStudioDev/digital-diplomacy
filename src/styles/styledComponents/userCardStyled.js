@@ -5,14 +5,14 @@ export const UserCardStyled = styled.section`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
+
   .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
-    height:100%;
+    height: 100%;
   }
   .right {
     display: flex;
@@ -20,11 +20,11 @@ export const UserCardStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 45%;
-    height: 50%;    
+    height: 50%;
     border-radius: 16px;
     padding: 10px;
     background-color: ${({ theme }) => theme.background};
-    border:2px solid ${({ theme }) => theme.toggleBorder};
+    border: 2px solid ${({ theme }) => theme.toggleBorder};
     section {
       height: 100%;
       width: 100%;
@@ -56,8 +56,9 @@ export const ContainerButtons = styled.div`
 export const HeaderUserView = styled.header`
   display: flex;
   flex-direction: row;
-  padding: 10px 25px;
+  padding: 8px 79px;
   width: 100%;
+  -webkit-box-pack: start;
   justify-content: flex-start;
   gap: 10px;
 
@@ -68,7 +69,7 @@ export const HeaderUserView = styled.header`
     padding: 10px 50px 10px 15px;
     background-color: ${({ theme }) => theme.primary};
     border-radius: 0% 0% 22% 0% / 0% 0% 100% 0%;
-    min-width: 450px;
+    min-width: 170px;
     display: flex;
     flex-direction: column;
     .countryName {

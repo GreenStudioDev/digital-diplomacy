@@ -32,7 +32,7 @@ export default function HtMostUsedItems ({ usuario, context }) {
     )
   }
   if (innerData.length === 0) {
-    return <EmptyDataStyled>No hay data correspondiente al periodo seleccionado</EmptyDataStyled>
+    return <EmptyDataStyled>No data for the selected period</EmptyDataStyled>
   }
 
   return (

@@ -63,7 +63,7 @@ export function MonthlyTweetsItem ({ newData }) {
         <h5>
           {/* Periodo de {period.startDate.toString()} a{period.endDate.toString()} */}
         </h5>
-        <h5>Tweets totales periodo - {totaltweets} </h5>
+        <h5>Total Tweets for this period - {totaltweets} </h5>
         <DataTable
           columns={columns}
           data={rows}

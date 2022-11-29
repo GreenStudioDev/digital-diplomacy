@@ -51,7 +51,7 @@ function HtMostUsedPie ({ newData, title, usuario }) {
         <Pie data={dataChart} options={optionsPie} />
           )
         : (
-        <h4>No hay data correspondiente al periodo seleccionado</h4>
+        <h4>No data for the selected period</h4>
           )}
     </PieChartContainer>
   )
@@ -63,7 +63,7 @@ export function extractHtCategories (data) {
   const htCategories = []
   data.forEach((item) => {
     htCategories.push({
-      category: item.ht_category_spa,
+      category: item.ht_category_eng,
       count: item.ht_mentions_number
     })
   })

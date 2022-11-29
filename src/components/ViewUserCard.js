@@ -51,7 +51,7 @@ function ViewUserCard ({ data, period }) {
         <hr />
         <UserCard
           name={'Institution / Name'}
-          data={data[0].official_account_name_spa}
+          data={data[0].official_account_name_eng}
         />
         <hr />
         <UserCard
@@ -66,7 +66,7 @@ function ViewUserCard ({ data, period }) {
             data[period.endDate - 1]?.followers_number === '0'
               ? data[period.endDate - 2]?.followers_number
               : data[period.endDate - 1]?.followers_number ??
-                'No hay data correspondiente al periodo seleccionado'
+                'No data for the selected period'
           }
         />
         <hr />
@@ -76,7 +76,7 @@ function ViewUserCard ({ data, period }) {
             data[period.endDate - 1]?.following_number === '0'
               ? data[period.endDate - 2]?.following_number
               : data[period.endDate - 1]?.following_number ??
-                'No hay data correspondiente al periodo seleccionado'
+                'No data for the selected period'
           }
         />
         <hr />
@@ -84,7 +84,7 @@ function ViewUserCard ({ data, period }) {
           name={'Total tuits período'}
           data={
             totalTweetsPeriod ??
-            'No hay data correspondiente al periodo seleccionado'
+            'No data for the selected period'
           }
         />
       </div>
@@ -105,7 +105,7 @@ export function UserAccountCard ({ user }) {
         <div className="dot" />
         <div className="innerGroup">
           <div className="title">
-            <h5>Cuenta</h5>
+            <h5>Account</h5>
           </div>
           <div className="account">
             <p>{user}</p>

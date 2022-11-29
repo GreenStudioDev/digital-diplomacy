@@ -64,7 +64,7 @@ export function extractMentionedCategories (data) {
   const htCategories = []
   data.forEach((item) => {
     htCategories.push({
-      category: item.most_mentioned_category_spa,
+      category: item.most_mentioned_category_eng,
       count: item.mentions_number
     })
   })

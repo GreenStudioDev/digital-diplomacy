@@ -67,16 +67,15 @@ export const NavBarHomeStyled = styled.nav`
     .menu {
       display: none;
     }
-    .opened{
+    .opened {
       position: absolute;
-      top: 80px;
+      top: 119px;
       left: 0;
       width: 100%;
       height: 90%;
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
       z-index: 100;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,6 +125,5 @@ export const MenuButtonStyled = styled.button`
   }
   &:focus {
     outline: red;
-    
   }
 `

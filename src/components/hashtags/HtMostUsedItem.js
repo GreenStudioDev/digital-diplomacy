@@ -34,8 +34,8 @@ export function HtMostUsedItem ({ newData, periodId }) {
   if (account) {
     accountInfo.push(account.official_account)
     // accountInfo.push(account.period_id);
-    accountInfo.push(account.official_account_name_spa)
-    accountInfo.push(account.most_retweeted_category_desc_spa)
+    accountInfo.push(account.official_account_name_eng)
+    accountInfo.push(account.most_retweeted_category_desc_eng)
   }
 
   function createData (
@@ -60,11 +60,11 @@ export function HtMostUsedItem ({ newData, periodId }) {
 
   const rows = newData.map((item) =>
     createData(
-      item.official_account_name_spa,
+      item.official_account_name_eng,
       item.ht,
-      item.ht_category_spa,
+      item.ht_category_eng,
       parseInt(item.ht_mentions_number),
-      item.ht_category_desc_spa
+      item.ht_category_desc_eng
     )
   )
 
@@ -186,10 +186,10 @@ export function HtMostUsedItem ({ newData, periodId }) {
       {newData.map((data) => (
         <div key={`ht-${data.ht_most_used_id}`}>
           <h2>Hashtag: {data.ht}</h2>
-          <h4>descripción: {data.official_account_name_spa}</h4>
+          <h4>descripción: {data.official_account_name_eng}</h4>
           <span>
-            categoría: {data.ht_category_spa} - descripción de la categoría:{' '}
-            {data.ht_category_desc_spa} - número de menciones:{' '}
+            categoría: {data.ht_category_eng} - descripción de la categoría:{' '}
+            {data.ht_category_desc_eng} - número de menciones:{' '}
             {data.ht_mentions_number} - periodo: {data.period_id}
           </span>
         </div>

@@ -63,7 +63,7 @@ export function extractRetwittedCategories (data) {
   const htCategories = []
   data.forEach((item) => {
     htCategories.push({
-      category: item.most_retweeted_category_spa,
+      category: item.most_retweeted_category_eng,
       count: item.tweets_number
     })
   })

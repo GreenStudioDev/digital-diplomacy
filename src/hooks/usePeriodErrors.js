@@ -58,7 +58,7 @@ function UsePeriodErrors ({ periodComparison, errors, setErrors }) {
       )}
       {errors.nonAscendingPeriods === true && (
         <ErrorTable>
-          <p>Las fechas no pueden ser descendentes</p>
+          <p>Select a later date from the starting date</p>
         </ErrorTable>
       )}
     </ErrorContainer>

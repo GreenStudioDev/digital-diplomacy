@@ -2,54 +2,48 @@ import styled from 'styled-components'
 
 export const FloatingTextStyled = styled.div`
   position: absolute;
-  top: 250px;
-  left: 60px;  
-  min-width:100px;
+  bottom: auto;
+  left: 60px;
+  top: 435px;
+  min-width: 100px;
   height: fit-content;
-  max-width:450px;
+  max-width: 450px;
   background-color: transparent;
   color: ${({ theme }) => theme.text};
-  
+
   p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    font-weight: 500;    
+    font-size: 1rem;
+    margin-bottom: 0px;
+    font-weight: 500;
     text-align: left;
-    pointer-events: none;
-  }
-  @media (max-width: 1200px) {
-    top: 450px;
-    
   }
   @media (max-width: 968px) {
     display: flex;
-    position: absolute;    
-    bottom: 250px;
+    position: absolute;
+    top: 395px;
+    left: 30px;
+    -webkit-box-pack: center;
     justify-content: center;
     flex-direction: column;
     width: 300px;
     p {
-      font-size: 1rem;
+      font-size: 0.81rem;
     }
   }
   @media (max-width: 768px) {
     position: absolute;
-    bottom: 300px;
-    left: 10px;
-    top: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-       p {
-      font-size: 0.8rem;
+    top: 479px;
+    width: 270px;
+    left: 15px;
+    p {
+      font-size: 0.68rem;
     }
   }
   @media (max-width: 480px) {
     position: absolute;
-    bottom: 300px;
-    left: 140px;
+    bottom: 250px;
+    left: 40px;
     width: 150px;
-    top: 100px;
     .info {
       display: none;
     }
@@ -57,16 +51,14 @@ export const FloatingTextStyled = styled.div`
 `
 export const FloatingTextRightIslandStyled = styled.div`
   position: absolute;
-  margin-top: 100px;
-  top:110px;
+  top: 163px;
   padding: 10px 50px;
-  margin: 0 auto;
-  margin-right: 0px;
+  margin: 0px 0px 0px auto;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
-  border: 3px solid ${({ theme }) => theme.text};
-  border-radius: 20px;
   background-color: transparent;
   color: ${({ theme }) => theme.text};
   p {
@@ -87,7 +79,9 @@ export const FloatingTextRightIslandStyled = styled.div`
   }
   @media (max-width: 480px) {
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
     p {
       font-size: 1.2rem;
@@ -97,17 +91,16 @@ export const FloatingTextRightIslandStyled = styled.div`
 
 export const FloatingTextRightStyled = styled.div`
   position: absolute;
-  top: 130px;
-  min-width:100px;
-  max-width:350px;
+  top: 193px;
+  min-width: 193px;
+  max-width: 350px;
   right: 55px;
-  border: 3px solid ${({ theme }) => theme.text};
-  border-radius: 20px;
-  background-color: transparent;
   color: ${({ theme }) => theme.text};
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   background-color: transparent;
   p {
@@ -118,7 +111,7 @@ export const FloatingTextRightStyled = styled.div`
     text-align: auto;
   }
   @media (max-width: 968px) {
-    top: 100px;
+    top: 195px;
     height: 60px;
     right: 100px;
     width: fit-content;
@@ -127,18 +120,20 @@ export const FloatingTextRightStyled = styled.div`
     }
   }
   @media (max-width: 768px) {
-    border: 10px solid transparent;
-    top: 100px;
+    top: 164px;
     height: 60px;
-    margin: 0 auto;
+    margin: 0px auto;
     width: fit-content;
     p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
   @media (max-width: 480px) {
+    top: 164px;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
     p {
       font-size: 1rem;
@@ -147,67 +142,125 @@ export const FloatingTextRightStyled = styled.div`
 `
 
 export const ButtonFloatingStyled = styled.button`
-  width: 60%;
-  height: 50px;
-  margin-top: 50px;
+  position: absolute;
+  height: 40px;
+  bottom: 130px;
   border-radius: 25px;
   background-color: ${({ theme }) => theme.primary};
-  opacity: 0.8;  
+  opacity: 0.8;
   color: ${({ theme }) => theme.textContrast};
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  width: 70%;
+  -webkit-box-align: center;
   align-items: center;
-  p{
+  p {
     width: fit-content;
   }
   &:hover {
     background-color: ${({ theme }) => theme.secondary};
   }
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 968px) {
+    bottom: 125px;
+    width: 70%;
     height: 40px;
+    p {
+      font-size: 0.68rem;
+    }
+  }
+  @media (max-width: 768px) {
+    bottom: 80px;
+    width: 70%;
+    height: 40px;
+    p {
+      font-size: 0.68rem;
+    }
   }
   @media (max-width: 480px) {
+    top: 19px;
+    width: 100%;
+    height: 40px;
+    left: -12px;
+    bottom: auto;
+  }
+`
+export const ButtonFloatingIslandStyled = styled.button`
+  position: absolute;
+  width: 60%;
+  height: 50px;
+  bottom: 130px;
+  border-radius: 25px;
+  background-color: ${({ theme }) => theme.primary};
+  opacity: 0.8;
+  color: ${({ theme }) => theme.textContrast};
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  p {
+    width: fit-content;
+  }
+  &:hover {
+    background-color: ${({ theme }) => theme.secondary};
+  }
+  @media (max-width: 968px) {
+    position: absolute;
+    width: 45%;
+    bottom: 90px;
+    height: 40px;
+    p {
+      font-size: 0.68rem;
+    }
+  }
+  @media (max-width: 768px) {
+    position: absolute;
     width: 70%;
+    bottom: 84px;
+    height: 40px;
+    p {
+      font-size: 0.68rem;
+    }
+  }
+  @media (max-width: 480px) {
+    position: absolute;
+    width: 70%;
+    left: -25px;
+    bottom: 40px;
     height: 40px;
   }
 `
 
 export const FloatingTextIslandsStyled = styled.div`
-  position: absolute;  
-  left: 60px;  
-  bottom: 150px;
-  width: 550px;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  width: 450px;
   background-color: transparent;
   color: ${({ theme }) => theme.text};
   p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
+    font-size: 1.1rem;
+    margin-bottom: 0px;
     font-weight: 500;
-    text-align: auto;
   }
 
   @media (max-width: 968px) {
     display: flex;
-    position: absolute;
-    top: 450px;    
+    width: 350px;
+    -webkit-box-pack: center;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;
     p {
-      font-size: 1rem;
+      font-size: 0.81rem;
     }
   }
   @media (max-width: 768px) {
     position: absolute;
-    bottom: 150px;
-    left: 10px;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 300px;
+    left: 30px;
+    width: 260px;
     p {
-      font-size: 0.8rem;
+      font-size: 0.68rem;
     }
   }
   @media (max-width: 480px) {

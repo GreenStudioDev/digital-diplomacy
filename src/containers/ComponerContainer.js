@@ -54,7 +54,7 @@ export default function ComponentContainer ({ usuario, open }) {
         <CollapsableTableStyled className='comparative'>
           <ButtonToogle name="most-retweet" open={open}>
             {isPeriodComparisonActive
-              ? `Usuarios más retuiteados del periodo ${periodA.name} al ${periodB.name}`
+              ? `Most frequently retweeted users from ${periodA.name} to ${periodB.name}`
               : `Most retweeted users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
@@ -66,7 +66,7 @@ export default function ComponentContainer ({ usuario, open }) {
         <CollapsableTableStyled>
           <ButtonToogle name="most-replied" open={open}>
             {isPeriodComparisonActive
-              ? `Usuarios que más han recibido respuesta del periodo ${periodA.name} al ${periodB.name}`
+              ? `Users with the highest number of replies from ${periodA.name} to ${periodB.name}`
               : `Most replied users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
@@ -78,7 +78,7 @@ export default function ComponentContainer ({ usuario, open }) {
         <CollapsableTableStyled>
           <ButtonToogle name="most-ht" open={open}>
             {isPeriodComparisonActive
-              ? `Hashtags más usados del periodo ${periodA.name} al ${periodB.name}`
+              ? `Most frequently used hashtags from ${periodA.name} to ${periodB.name}`
               : `Most used Hashtags from ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 
@@ -94,7 +94,7 @@ export default function ComponentContainer ({ usuario, open }) {
         <CollapsableTableStyled>
           <ButtonToogle name="most-mentioned" open={open}>
             {isPeriodComparisonActive
-              ? `Usuarios más mencionados del periodo ${periodA.name} al ${periodB.name}`
+              ? `Most frequently mentioned users from ${periodA.name} to ${periodB.name}`
               : `Most mentioned users of ${accountIdA.name} and ${accountIdB.name} accounts`}
           </ButtonToogle>
 

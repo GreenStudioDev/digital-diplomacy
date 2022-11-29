@@ -27,31 +27,32 @@ export const PieChartContainer = styled.div`
   min-height: 450px;
   align-items: center;
   justify-content:space-between;
-  border-bottom: 2px solid ${({ theme }) => theme.toggleBorder} !important;
+  border: 2px solid ${({ theme }) => theme.toggleBorder} !important;
   h4 {
     
-    width: 100%;
-    border: 2px solid ${({ theme }) => theme.toggleBorder};
+    width: 100.2%;
+    /* border: 2px solid ${({ theme }) => theme.toggleBorder}; */
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
     font-size: 1.2rem;    
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     text-align: center;
     border-bottom: 1px solid white;
     background-color: ${({ theme }) => theme.secondary};
-    margin:0;
+    margin:-1px;
   }
   canvas{
-    border-left: 2px solid ${({ theme }) => theme.toggleBorder};
-    border-right: 2px solid ${({ theme }) => theme.toggleBorder};
+    /* border-left: 35px solid ${({ theme }) => theme.toggleBorder};
+    border-right: 35px solid ${({ theme }) => theme.toggleBorder}; */
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     padding: 5px;
     height: 100%;
+    margin: auto 0px;
   }
 
 

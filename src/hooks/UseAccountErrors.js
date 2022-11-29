@@ -44,7 +44,7 @@ function UseAccountErrors ({ accounts, errors, setErrors }) {
     <ErrorContainer>
       {errors.sameAccounts === true && (
         <ErrorTable>
-          <p>Seleccione 2 cuentas diferentes</p>
+          <p>Select 2 different accounts</p>
         </ErrorTable>
       )}
       {errors.emptyAccounts && (

@@ -47,7 +47,7 @@ export default function MostRetweetedItems ({ context, usuario }) {
       })}
       {accountsNames.length > data.length && <>
       <EmptyDataStyled>
-        No hay datos para mostrar
+        No data
       </EmptyDataStyled>
 
       </>}
