@@ -40,7 +40,7 @@ function HeaderUserCard ({ countryId, userName }) {
 
   return (
     <HeaderUserView>
-      <img src={data.flagUrl} alt={`Bandera de ${data.countryName}`} />
+      <img src={data.flagUrl} alt={`Flag of ${data.countryName}`} />
       <div className="name">
         <h2 className="countryName">{data.countryName}</h2>
         <h2 className="accountName">{userName}</h2>

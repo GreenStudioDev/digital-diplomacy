@@ -71,7 +71,7 @@ function ViewUserCard ({ data, period }) {
         />
         <hr />
         <UserCard
-          name={'Followiing accounts Nº'}
+          name={'Following accounts Nº'}
           data={
             data[period.endDate - 1]?.following_number === '0'
               ? data[period.endDate - 2]?.following_number
@@ -81,7 +81,7 @@ function ViewUserCard ({ data, period }) {
         />
         <hr />
         <UserCard
-          name={'Total tuits período'}
+          name={'Total tweets period'}
           data={
             totalTweetsPeriod ??
             'No data for the selected period'

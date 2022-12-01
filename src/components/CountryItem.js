@@ -79,7 +79,7 @@ export function CountryItem ({
             <p>{countryData.country_name_eng ?? ''}</p>
             <img
               src={getFlag(countryData.country_name_eng)}
-              alt={`Bandera de ${countryData.country_name_eng}`}
+              alt={`Flag of ${countryData.country_name_eng}`}
             />
             <hr />
           </CountryCardSelectStyled>
@@ -98,7 +98,7 @@ export function CountryItem ({
           <p>{countryData?.country_name_eng ?? ''}</p>
           <img
             src={getFlag(countryData.country_name_eng)}
-            alt={`Bandera de ${countryData.country_name_eng}`}
+            alt={`Flag of ${countryData.country_name_eng}`}
           />
           <hr />
         </CountryCardSelectStyled>
@@ -120,7 +120,7 @@ export function CountryItem ({
                 <p>{accountsCountry[0]?.country_name_eng ?? ''}</p>
                 <img
                   src={getFlag(accountsCountry[0].country_name_eng)}
-                  alt={`Bandera de ${accountsCountry[0].country_name_eng}`}
+                  alt={`Flag of ${accountsCountry[0].country_name_eng}`}
                 />
                 <hr />
               </CountryCardSelectStyled>

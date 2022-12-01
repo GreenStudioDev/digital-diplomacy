@@ -34,7 +34,7 @@ export function MonthlyTweetsItem ({ newData }) {
   ]
   function createData (month, tweetsNumber) {
     const stringMonth =
-      new Date(month).toLocaleString('es-ES', {
+      new Date(month).toLocaleString('en-En', {
         month: 'long',
         timeZone: 'UTC'
       }) +

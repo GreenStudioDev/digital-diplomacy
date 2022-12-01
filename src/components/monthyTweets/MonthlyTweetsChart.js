@@ -139,7 +139,7 @@ function createDatasets (data, context) {
     newLabels = labels
 
     newLabels = newLabels.map((item) =>
-      new Date(item).toLocaleString('es-ES', {
+      new Date(item).toLocaleString('en-EN', {
         month: 'short',
         timeZone: 'UTC'
       })
@@ -190,7 +190,7 @@ function createDatasets (data, context) {
     })
     let labels = data2[0]?.map((item) => item.month)
     labels = labels.map((item) =>
-      new Date(item).toLocaleString('es-ES', {
+      new Date(item).toLocaleString('en-EN', {
         month: 'short',
         timeZone: 'UTC',
         year: 'numeric'
